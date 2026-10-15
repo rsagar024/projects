@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account — Color Tap</title>
+    <meta name="description" content="How to delete your Color Tap account and data, from Arovyx Studio.">
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --secondary: #FF6584;
+            --accent: #00D9FF;
+            --danger: #FF5370;
+            --bg: #0A0A1A;
+            --card: #1A1A2E;
+            --text: #E0E0F0;
+            --text-muted: #9090B0;
+            --border: rgba(255,255,255,0.08);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 60px 20px 50px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 2.4rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+        .hero p { color: rgba(255,255,255,0.85); font-size: 1rem; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px 80px; }
+        .last-updated {
+            display: inline-block;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-top: 40px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        h3 { font-size: 1.1rem; font-weight: 600; color: var(--text); margin-top: 24px; margin-bottom: 10px; }
+        p { margin-bottom: 14px; color: var(--text); font-size: 0.95rem; }
+        ul, ol { margin: 0 0 14px 24px; color: var(--text); font-size: 0.95rem; }
+        li { margin-bottom: 6px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code { background: var(--card); border-radius: 4px; padding: 1px 6px; font-size: 0.85rem; }
+        .highlight-box {
+            background: var(--card);
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+        .highlight-box strong { color: var(--accent); }
+        .warning-box {
+            background: var(--card);
+            border-left: 4px solid var(--danger);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+        .warning-box > strong { color: var(--danger); }
+        .warning-box ul { margin-top: 8px; margin-bottom: 0; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 0.9rem; }
+        th, td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--border); }
+        th { background: var(--card); color: var(--accent); font-weight: 600; }
+        td { color: var(--text); }
+        .steps { counter-reset: step; list-style: none; margin-left: 0; }
+        .steps li {
+            counter-increment: step;
+            position: relative;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px 16px 12px 56px;
+            margin-bottom: 10px;
+        }
+        .steps li::before {
+            content: counter(step);
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 12px 24px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #fff;
+            font-weight: 600;
+        }
+        .btn:hover { text-decoration: none; opacity: 0.9; }
+        .contact-section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            margin-top: 48px;
+            text-align: center;
+        }
+        .contact-section h2 { border: none; margin-top: 0; }
+        .doc-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 24px; margin-top: 32px; font-size: 0.9rem; }
+        .footer { text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 16px; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .container { padding: 24px 16px 60px; }
+            h2 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Delete Your Account</h1>
+    <p>Color Tap — Fast Reflex Game</p>
+</div>
+
+<div class="container">
+
+    <div class="last-updated">Last updated: October 15, 2026</div>
+
+    <p>You can permanently delete your <strong>Color Tap</strong> account, and the data linked to it, at any time. This page explains how, and what happens to your data. Color Tap is developed by <strong>Arovyx Studio</strong>.</p>
+
+    <div class="highlight-box">
+        <strong>Summary:</strong> Delete your account instantly from <em>Profile → Delete Account</em> in the App, or email us and we will delete it within 30 days. Deletion is permanent and <strong>does not</strong> cancel an active subscription.
+    </div>
+
+    <h2>1. Delete in the App (instant)</h2>
+    <ol class="steps">
+        <li>Open <strong>Color Tap</strong> and sign in to the account you want to delete.</li>
+        <li>Tap your <strong>profile avatar</strong> on the Home screen to open <strong>Profile</strong>.</li>
+        <li>Scroll to the bottom and tap <strong>Delete Account</strong>.</li>
+        <li>Confirm by tapping <strong>DELETE</strong>.</li>
+    </ol>
+    <p>Your account and cloud data are removed straight away. You need an internet connection, and you may be asked to sign in again first.</p>
+
+    <h2>2. Request Deletion by Email</h2>
+    <p>If you no longer have the App installed or cannot sign in, email us from the address registered to your account:</p>
+    <ul>
+        <li><strong>To:</strong> <a href="mailto:app.development.arovyx@gmail.com?subject=Delete%20my%20Color%20Tap%20account">app.development.arovyx@gmail.com</a></li>
+        <li><strong>Subject:</strong> Delete my Color Tap account</li>
+        <li><strong>Include:</strong> Your registered email and your username, if you claimed one</li>
+    </ul>
+    <p><a class="btn" href="mailto:app.development.arovyx@gmail.com?subject=Delete%20my%20Color%20Tap%20account&amp;body=Registered%20email%3A%20%0AUsername%20(if%20any)%3A%20%0A%0APlease%20delete%20my%20Color%20Tap%20account%20and%20data.">Email a Deletion Request</a></p>
+    <p>We may ask you to confirm that you own the account. Verified requests are completed within <strong>30 days</strong>, and we will email you when it is done.</p>
+
+    <h2>3. What Gets Deleted</h2>
+    <div class="table-wrap">
+    <table>
+        <tr><th>Data</th><th>What happens</th></tr>
+        <tr><td>Sign-in account (email, Google link or guest ID)</td><td>Deleted</td></tr>
+        <tr><td>Profile (display name, avatar, country, stats, achievements)</td><td>Deleted</td></tr>
+        <tr><td>Username reservation</td><td>Deleted, and the name becomes free for others to claim</td></tr>
+        <tr><td>Game scores and history</td><td>Deleted</td></tr>
+        <tr><td>Leaderboard entries (weekly and daily bests)</td><td>Deleted, and you are removed from the Global, Country and Friends boards</td></tr>
+    </table>
+    </div>
+
+    <h2>4. What May Be Kept</h2>
+    <ul>
+        <li><strong>Support messages:</strong> Kept for up to 90 days after they are resolved, then deleted. Ask in your email if you want them removed sooner.</li>
+        <li><strong>Analytics &amp; crash data:</strong> Not linked to your name or email. It expires under Firebase's standard retention: up to 14 months for analytics and 90 days for crash reports.</li>
+        <li><strong>Purchase records:</strong> Kept by Google Play or Apple under their own policies and legal obligations.</li>
+        <li><strong>Legal obligations:</strong> Any data we must keep by law, such as for fraud prevention or legal claims, is kept only as long as required.</li>
+    </ul>
+
+    <div class="warning-box">
+        <strong>Before you delete</strong>
+        <ul>
+            <li>Deletion is <strong>permanent</strong>. Your scores and progress cannot be restored.</li>
+            <li>Deleting your account <strong>does not cancel an active subscription</strong>. Cancel it first in Google Play (<em>Payments &amp; subscriptions → Subscriptions</em>) or in your Apple ID settings (<em>Subscriptions</em>).</li>
+        </ul>
+    </div>
+
+    <h2>5. Guest Players</h2>
+    <p>If you never registered, your game data is stored only on your device. To remove it, uninstall the App or clear its storage (<em>Settings → Apps → Color Tap → Storage → Clear data</em>). If you have questions about a guest account, email us.</p>
+
+    <p>For more about how we handle your data, see our <a href="../privacy/">Privacy Policy</a>.</p>
+
+    <div class="contact-section">
+        <h2>Need Help?</h2>
+        <p>If you have any trouble deleting your account, please contact us:</p>
+        <p style="margin-top: 12px;">
+            <strong>Arovyx Studio</strong><br>
+            Email: <a href="mailto:app.development.arovyx@gmail.com">app.development.arovyx@gmail.com</a><br>
+            Package: <code>dev.arovyx.games.colortap</code>
+        </p>
+    </div>
+
+    <div class="doc-links">
+        <a href="../privacy/">Privacy Policy</a>
+        <a href="../terms/">Terms &amp; Conditions</a>
+        <a href="../delete-account/">Delete Account</a>
+    </div>
+    <p class="footer">© 2026 Arovyx Studio. All rights reserved.</p>
+
+</div>
+
+</body>
+</html>
