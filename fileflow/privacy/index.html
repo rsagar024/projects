@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FileFlow Privacy Policy</title>
+<meta name="description" content="How the FileFlow app by Arovyx Studio handles your data.">
+<meta name="color-scheme" content="light dark">
+<script>try{var t=new URLSearchParams(location.search).get("theme");if(t)sessionStorage.setItem("theme",t);else t=sessionStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4fb;--card:rgba(255,255,255,.78);--stroke:rgba(90,80,140,.14);--text:#1c1a2b;--muted:#5d5975;--faint:#8a86a3;--accent:#6c4cf5;--accent2:#14b8a6;--note:rgba(108,76,245,.08);--warn:rgba(239,68,68,.09);--warnText:#b42318;--a1:rgba(124,92,255,.28);--a2:rgba(20,184,166,.22);--a3:rgba(236,72,153,.18);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0a14;--card:rgba(24,22,40,.78);--stroke:rgba(255,255,255,.09);--text:#eeecf8;--muted:#b3afcc;--faint:#7f7b99;--accent:#9d86ff;--accent2:#2dd4bf;--note:rgba(157,134,255,.1);--warn:rgba(248,113,113,.1);--warnText:#fca5a5;--a1:rgba(124,92,255,.32);--a2:rgba(20,184,166,.2);--a3:rgba(236,72,153,.16);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b0a14;--card:rgba(24,22,40,.78);--stroke:rgba(255,255,255,.09);--text:#eeecf8;--muted:#b3afcc;--faint:#7f7b99;--accent:#9d86ff;--accent2:#2dd4bf;--note:rgba(157,134,255,.1);--warn:rgba(248,113,113,.1);--warnText:#fca5a5;--a1:rgba(124,92,255,.32);--a2:rgba(20,184,166,.2);--a3:rgba(236,72,153,.16);color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:-20%;z-index:-1;background:radial-gradient(40% 35% at 15% 10%,var(--a1),transparent 70%),radial-gradient(35% 30% at 90% 20%,var(--a2),transparent 70%),radial-gradient(45% 40% at 60% 95%,var(--a3),transparent 70%)}
+.wrap{max-width:820px;margin:0 auto;padding:32px 16px 48px}
+header.top{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#7c5cff,#14b8a6);display:grid;place-items:center;color:#fff;font:700 18px Sora,Inter,sans-serif;flex:none}
+.brand{font:600 18px Sora,Inter,sans-serif;letter-spacing:-.01em}
+.brand small{display:block;font:500 13px Inter,sans-serif;color:var(--faint);letter-spacing:0}
+.card{background:var(--card);border:1px solid var(--stroke);border-radius:24px;padding:28px 22px;box-shadow:0 20px 60px -30px rgba(40,20,120,.35)}
+@media (min-width:640px){.card{padding:40px 44px}}
+h1{font:700 clamp(28px,6vw,38px)/1.15 Sora,Inter,sans-serif;letter-spacing:-.02em;margin:0 0 8px}
+h2{font:600 21px/1.3 Sora,Inter,sans-serif;letter-spacing:-.01em;margin:36px 0 10px;scroll-margin-top:16px}
+h3{font:600 16px/1.4 Inter,sans-serif;margin:22px 0 6px}
+p,li{color:var(--muted)}
+strong{color:var(--text)}
+a{color:var(--accent);text-underline-offset:3px}
+ul,ol{padding-left:22px}
+li{margin:6px 0}
+.meta{color:var(--faint);font-size:14px;margin:0 0 20px}
+.lead{font-size:17px;color:var(--text)}
+.note{background:var(--note);border-radius:16px;padding:14px 18px;margin:18px 0}
+.note p{margin:4px 0}
+.warn{background:var(--warn);border-radius:16px;padding:14px 18px;margin:18px 0}
+.warn p,.warn strong{color:var(--warnText);margin:4px 0}
+nav.toc{border:1px solid var(--stroke);border-radius:16px;padding:14px 18px;margin:22px 0 8px}
+nav.toc b{font:600 13px Inter,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--faint)}
+nav.toc ol{margin:8px 0 0;padding-left:20px;columns:2 240px;column-gap:24px}
+nav.toc li{margin:3px 0;break-inside:avoid}
+nav.toc a{text-decoration:none}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px;display:block;overflow-x:auto}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--stroke);vertical-align:top;color:var(--muted)}
+th{color:var(--text);font-weight:600}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps>li{counter-increment:s;position:relative;padding:16px 18px 16px 62px;border:1px solid var(--stroke);border-radius:18px;margin:12px 0}
+.steps>li::before{content:counter(s);position:absolute;left:16px;top:16px;width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#7c5cff,#14b8a6);color:#fff;font:700 15px/32px Sora,Inter,sans-serif;text-align:center}
+.steps h3{margin:2px 0 4px}
+.btn{display:inline-block;padding:11px 18px;border-radius:14px;background:linear-gradient(135deg,#7c5cff,#14b8a6);color:#fff;text-decoration:none;font-weight:600}
+.grid{display:grid;gap:14px;grid-template-columns:1fr;margin-top:24px}
+@media (min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}
+.tile{display:block;border:1px solid var(--stroke);border-radius:18px;padding:18px;text-decoration:none;background:var(--card)}
+.tile b{display:block;font:600 17px Sora,Inter,sans-serif;color:var(--text);margin-bottom:4px}
+.tile span{color:var(--muted);font-size:14px}
+footer{margin-top:28px;text-align:center;color:var(--faint);font-size:14px}
+footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-bottom:8px}
+footer a{text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="logo" aria-hidden="true">F</div><div class="brand">FileFlow<small>by Arovyx Studio</small></div></header>
+<main class="card">
+<h1>Privacy Policy</h1>
+<p class="meta">Effective and last updated: 26 November 2026</p>
+<p class="lead">FileFlow lets you store, browse and sync your files using your <strong>own Telegram account</strong> as the storage. This policy explains what information the FileFlow app handles, where it goes, and the choices you have.</p>
+<div class="note">
+<p><strong>The short version</strong></p>
+<p>FileFlow has no servers of its own and no FileFlow account. Your files, phone number, login code and password go directly between your device and Telegram &mdash; Arovyx Studio never receives them. The only data that reaches us (through Google Firebase) is pseudonymous app usage statistics and crash reports.</p>
+</div>
+
+<nav class="toc" aria-label="Contents"><b>Contents</b>
+<ol>
+<li><a href="#who">Who we are</a></li>
+<li><a href="#how">How FileFlow works</a></li>
+<li><a href="#telegram">Data handled through Telegram</a></li>
+<li><a href="#device">Data stored on your device</a></li>
+<li><a href="#encryption">Optional encryption</a></li>
+<li><a href="#analytics">Analytics &amp; crash reports</a></li>
+<li><a href="#permissions">Device permissions</a></li>
+<li><a href="#sharing">Sharing &amp; selling</a></li>
+<li><a href="#retention">Retention &amp; deletion</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#rights">Your rights</a></li>
+<li><a href="#children">Children</a></li>
+<li><a href="#changes">Changes to this policy</a></li>
+<li><a href="#contact">Contact us</a></li>
+</ol>
+</nav>
+
+<h2 id="who">1. Who we are</h2>
+<p>FileFlow (the &ldquo;app&rdquo;, Android package <code>dev.arovyx.apps.fileflow</code>) is developed and published by <strong>Arovyx Studio</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;). For anything about this policy or your data, write to <a href="mailto:app.development.arovyx@gmail.com">app.development.arovyx@gmail.com</a>.</p>
+<p>FileFlow is an independent app. It is not made, endorsed or operated by Telegram.</p>
+
+<h2 id="how">2. How FileFlow works</h2>
+<ul>
+<li>You sign in with your Telegram account &mdash; by phone number and login code (plus your two-step verification password if you have one), or by scanning a QR code with Telegram on another device. Sign-in uses Telegram&rsquo;s official client library (TDLib) running <strong>on your device</strong>.</li>
+<li>FileFlow creates a private storage group in your Telegram account and uploads the files you choose to it. Telegram stores them; FileFlow organises them into folders on your device.</li>
+<li>There is no FileFlow server, no FileFlow user account and no FileFlow database in the cloud. We cannot see, open, restore or delete your files or your Telegram account.</li>
+</ul>
+
+<h2 id="telegram">3. Data handled through Telegram</h2>
+<p>When you use FileFlow, the following is exchanged <strong>directly between your device and Telegram</strong>, and is governed by <a href="https://telegram.org/privacy" target="_blank" rel="noopener">Telegram&rsquo;s Privacy Policy</a> and <a href="https://telegram.org/tos" target="_blank" rel="noopener">Terms of Service</a>:</p>
+<ul>
+<li><strong>Sign-in details:</strong> your phone number, the login code, your two-step verification password (if set), and the session Telegram creates for this device.</li>
+<li><strong>Your profile:</strong> name, username and profile photo, shown on the You tab. If you edit your name or photo in FileFlow, the change is sent to Telegram.</li>
+<li><strong>Your files:</strong> the files you upload, and a small preview image (up to 320&nbsp;px) made on your device for images, videos, audio covers and PDFs &mdash; never for encrypted files.</li>
+<li><strong>File details (metadata):</strong> each upload carries a caption with the file name, folder, size, type, a content hash (used to detect duplicates), upload time, a favourite flag and, for encrypted files, encryption parameters. A pinned message in the storage group keeps your empty folders and, if you use encryption, your passphrase-protected key.</li>
+<li><strong>Active sessions:</strong> the Devices screen reads your Telegram sessions from Telegram so you can end them.</li>
+</ul>
+<p>Arovyx Studio does not receive a copy of any of this.</p>
+
+<h2 id="device">4. Data stored on your device</h2>
+<p>To work quickly, FileFlow keeps the following <strong>only on your device</strong>:</p>
+<table>
+<thead><tr><th>What</th><th>Why</th><th>Removed when</th></tr></thead>
+<tbody>
+<tr><td>Telegram session and TDLib database</td><td>Keep you signed in</td><td>You log out</td></tr>
+<tr><td>File index (names, folders, sizes, dates)</td><td>Fast browsing and search; rebuilt from Telegram when needed</td><td>You log out</td></tr>
+<tr><td>Downloaded and cached files, previews</td><td>Open, preview, stream and share files</td><td>You clear the cache (You tab) or log out</td></tr>
+<tr><td>Transfer queue and temporary copies</td><td>Resume uploads and downloads after the app is closed</td><td>The transfer finishes or is cancelled</td></tr>
+<tr><td>Settings (theme, share folder, encryption on/off)</td><td>Remember your choices</td><td>You uninstall (most are also cleared when you log out)</td></tr>
+<tr><td>Encryption key (if enabled), in secure storage</td><td>Encrypt and decrypt your files</td><td>You log out</td></tr>
+</tbody>
+</table>
+<p>Videos and audio are streamed to the built-in player through a local server that only listens on your device (<code>127.0.0.1</code>) and cannot be reached from the network. Encrypted files are never streamed this way.</p>
+<p>FileFlow only downloads file contents you ask for (opening, previewing, playing, downloading or sharing a file). Starting the app only syncs file details.</p>
+
+<h2 id="encryption">5. Optional encryption</h2>
+<p>You can turn on client-side encryption. Files are then encrypted on your device before upload, so Telegram only stores encrypted data. Your key is protected by a passphrase you choose; the protected key is stored in your Telegram storage group so your other devices can use it, and the unlocked key is kept in your device&rsquo;s secure storage.</p>
+<div class="warn"><p><strong>We never see your passphrase and cannot recover it.</strong> If you forget it, files you encrypted cannot be opened by anyone.</p></div>
+
+<h2 id="analytics">6. Analytics &amp; crash reports</h2>
+<p>FileFlow uses Google Firebase services, operated by Google LLC:</p>
+<ul>
+<li><strong>Firebase Analytics</strong> collects automatic, pseudonymous usage events (for example first open, session start, app updates and screens viewed), together with an app-instance identifier, device model, operating-system version, app version, language and approximate location derived from your IP address.</li>
+<li><strong>Firebase Crashlytics</strong> collects crash and error reports: stack traces, device model, OS version, app version, free memory and storage, and an installation identifier.</li>
+</ul>
+<p>These help us understand how the app is used and fix bugs. They <strong>do not</strong> include your files, file names, folders, phone number, Telegram messages or login details. Google processes this data under the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy terms</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>. Analytics data is kept for up to 14 months and crash reports for up to 90 days.</p>
+<p>FileFlow shows no ads and uses no advertising identifiers or ad networks.</p>
+
+<h2 id="permissions">7. Device permissions</h2>
+<ul>
+<li><strong>Internet and network state:</strong> to talk to Telegram.</li>
+<li><strong>Notifications:</strong> to show upload and download progress, the &ldquo;uploaded&rdquo; confirmation and media playback controls.</li>
+<li><strong>Foreground service (data sync, media playback) and wake lock:</strong> to keep transfers running and music playing while the app is in the background, and keep the screen on while a video plays.</li>
+<li><strong>Files you pick or share:</strong> FileFlow only reads the files you choose in the system picker or share to it from another app. It does not scan your storage.</li>
+</ul>
+
+<h2 id="sharing">8. Sharing &amp; selling</h2>
+<p>We do not sell, rent or trade personal information. Besides Telegram (which you use as your storage) and Google Firebase (analytics and crash reports, as above), FileFlow sends your data to no one. We may disclose information we hold only if required by law.</p>
+
+<h2 id="retention">9. Retention &amp; deletion</h2>
+<ul>
+<li>Data on your device stays until you clear the cache, log out or uninstall FileFlow.</li>
+<li>Your files stay in your Telegram account until you delete them (in FileFlow or in Telegram) or delete the storage group.</li>
+<li>Analytics and crash data are kept for the periods in section 6 and can be deleted on request.</li>
+</ul>
+<p>See <a href="https://rsagar024.github.io/projects/fileflow/delete-account/">Delete your account and data</a> for step-by-step instructions.</p>
+
+<h2 id="security">10. Security</h2>
+<p>Communication with Telegram is encrypted by Telegram&rsquo;s MTProto protocol. Keys and settings are kept in the platform&rsquo;s secure storage (Android Keystore, iOS Keychain). Optional client-side encryption adds protection so that even Telegram stores only encrypted data. No method of storage or transmission is completely secure, so we cannot guarantee absolute security.</p>
+
+<h2 id="rights">11. Your rights</h2>
+<p>Depending on where you live (for example under the GDPR, the UK GDPR, India&rsquo;s Digital Personal Data Protection Act 2023 or US state privacy laws), you may have the right to access, correct or delete your personal data, to object to or restrict its processing, and to complain to your local data protection authority. Because your files and account data live in your own Telegram account and on your device, you can manage most of it directly. For analytics and crash data, email us at <a href="mailto:app.development.arovyx@gmail.com">app.development.arovyx@gmail.com</a>; we respond within 30 days.</p>
+
+<h2 id="children">12. Children</h2>
+<p>FileFlow is not directed at children under 13 (or under 16 in the European Economic Area), and Telegram itself requires users to meet its minimum age. We do not knowingly collect data from children. If you believe a child has used FileFlow, contact us and we will request deletion of any related analytics data.</p>
+
+<h2 id="changes">13. Changes to this policy</h2>
+<p>We may update this policy when the app changes. We will update the date at the top and, for significant changes, tell you in the app or on this page before they take effect.</p>
+
+<h2 id="contact">14. Contact us</h2>
+<p><strong>Arovyx Studio</strong><br>Email: <a href="mailto:app.development.arovyx@gmail.com">app.development.arovyx@gmail.com</a></p>
+</main>
+<footer>
+<nav><a href="https://rsagar024.github.io/projects/fileflow/privacy/">Privacy Policy</a><a href="https://rsagar024.github.io/projects/fileflow/terms/">Terms &amp; Conditions</a><a href="https://rsagar024.github.io/projects/fileflow/delete-account/">Delete account</a></nav>
+<div>&copy; 2026 Arovyx Studio &middot; <a href="mailto:app.development.arovyx@gmail.com">app.development.arovyx@gmail.com</a></div>
+</footer>
+</div>
+</body>
+</html>

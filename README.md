@@ -18,6 +18,14 @@ https://<user>.github.io/<repo>/<folder>/
 | Terms & Conditions | [`color-tap/terms/`](color-tap/terms/) |
 | Delete Account | [`color-tap/delete-account/`](color-tap/delete-account/) |
 
+### FileFlow
+
+| Page | Path |
+| --- | --- |
+| Delete Account | [`fileflow/delete-account/`](fileflow/delete-account/) |
+| Privacy Policy | [`fileflow/privacy/`](fileflow/privacy/) |
+| Terms & Conditions | [`fileflow/terms/`](fileflow/terms/) |
+
 ## Adding a new project
 
 1. Create a new folder at the repo root, e.g. `my-app/`.
